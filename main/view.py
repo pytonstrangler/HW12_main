@@ -10,7 +10,7 @@ def main_index():
     return render_template('index.html')
 
 
-@main_blueprint.route('/search')
+@main_blueprint.route('/search/')
 def search_page():
     substr = request.args.get('s')
     posts = search_posts(substr)

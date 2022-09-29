@@ -33,6 +33,7 @@ def add_post(post):
     posts = load_posts()
     posts.append(post)
     save_posts_to_json(posts)
+    return post
 
 
 def save_posts_to_json(posts, path='posts.json'):
